@@ -1,0 +1,4 @@
+allprojects {
+    group = 'com.lxz.empathystar'
+    version = '0.1.0'
+}

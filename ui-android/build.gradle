@@ -1,0 +1,12 @@
+apply plugin: 'com.android.library'
+android {
+    namespace 'com.lxz.empathystar.widgets'
+    compileSdk 36
+    defaultConfig { minSdk 29 }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+dependencies { api project(':core') }
+buildscript {
+    repositories { google(); mavenCentral() }
+    dependencies { classpath 'com.android.tools.build:gradle:8.13.0' }
+}

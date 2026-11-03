@@ -1,0 +1,4 @@
+plugins { id 'application' }
+java { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
+dependencies { implementation project(':core'); runtimeOnly 'org.json:json:20240303' }
+application { mainClass = 'example.OfflineDemo' }
